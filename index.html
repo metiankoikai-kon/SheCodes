@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+</head>
+<body>
+
+    <h1>Create Your Account</h1>
+
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <div>
+                <label for="full-name">Full Name:</label><br>
+                <input type="text" id="full-name" name="full_name" placeholder="John Doe" required>
+            </div>
+            
+            <div>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email_address" placeholder="john.doe@example.com" required>
+            </div>
+            
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <label for="tel">Phone Number:</label><br>
+                <input type="tel" id="tel" name="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                <small>Format: 123-456-7890</small>
+            </div>
+            
+            <div>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="date_of_birth">
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Preferences</legend>
+
+            <div>
+                <p>Choose your preferred account type:</p>
+                <input type="radio" id="personal" name="account_type" value="personal" checked>
+                <label for="personal">Personal</label><br>
+                <input type="radio" id="business" name="account_type" value="business">
+                <label for="business">Business</label>
+            </div>
+
+            <div>
+                <label for="notifications">Receive notifications:</label><br>
+                <input type="checkbox" id="notifications" name="notifications" checked>
+            </div>
+            
+            <div>
+                <label for="rating">Rate our service (1-10):</label><br>
+                <input type="range" id="rating" name="service_rating" min="1" max="10" value="5">
+            </div>
+            
+            <div>
+                <label for="profile_color">Choose your profile color:</label><br>
+                <input type="color" id="profile_color" name="profile_color">
+            </div>
+            
+            <div>
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>File and Dropdown</legend>
+
+            <div>
+                <label for="profile_photo">Upload Profile Photo:</label><br>
+                <input type="file" id="profile_photo" name="profile_photo" accept="image/*">
+            </div>
+
+            <div>
+                <label for="country">Select your Country:</label><br>
+                <select id="country" name="country">
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </fieldset>
+        
+        <br>
+
+        <div>
+            <button type="submit">Register</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+
+</body>
+</html>
