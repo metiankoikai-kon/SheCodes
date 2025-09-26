@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fashion Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .product {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 1rem;
+    }
+    .sales {
+      margin: 2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    th, td {
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    .benefits {
+      margin: 2rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fashion Store</h1>
+    <p>Your one-stop destination for the latest trends!</p>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="images/dress1.jpg" alt="Dress" width="150">
+      <h3>Summer Dress</h3>
+      <p>$45</p>
+    </div>
+    <div class="product">
+      <img src="images/shirt1.jpg" alt="Shirt" width="150">
+      <h3>Classic Shirt</h3>
+      <p>$30</p>
+    </div>
+    <!-- Add more product cards as needed -->
+  </section>
+
+  <section class="sales">
+    <h2>Upcoming Sale Offers</h2>
+    <table>
+      <tr>
+        <th>Offer</th>
+        <th>Start Date</th>
+        <th>Discount</th>
+      </tr>
+      <tr>
+        <td>End of Season Sale</td>
+        <td>Sept 30, 2025</td>
+        <td>Up to 50% off</td>
+      </tr>
+      <tr>
+        <td>New Year Bonanza</td>
+        <td>Jan 1, 2026</td>
+        <td>Flat 30% off</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="benefits">
+    <h2>Why Shop With Us?</h2>
+    <ul>
+      <li>High-quality, trendy fashion items.</li>
+      <li>Fast, reliable shipping.</li>
+      <li>Exclusive discounts and seasonal offers.</li>
+      <li>Friendly customer support.</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Fashion Store. All rights reserved.
+  </footer>
+
+</body>
+</html>
